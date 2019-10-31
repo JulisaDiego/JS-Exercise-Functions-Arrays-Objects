@@ -11,7 +11,7 @@
  * the returned value should be 8.
 */
 function exampleFunction(num1, num2) {
-  return num1 + num2;
+  return num1 + num2 ;
 }
 
 // ⭐️ Example Challenge end ⭐️
@@ -37,9 +37,13 @@ function exampleFunction(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
-}
+function makePersonObject(id, name, email) {
+  return {id: id, name: name, email: email};
+ }
+ 
+ 
+ makePersonObject(1717, "Julisa", "Julisa@yahoo.com");
+ 
 
 /**
  * ### Challenge `getName`
@@ -54,10 +58,12 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
-}
 
+function getName(name) {
+  return "Hello, my name is " + name;
+};
+
+getName("Julisa");
 /**
  * ### Challenge `makeSmartPerson`
  * 
@@ -71,9 +77,18 @@ function getName(/* code here */) {
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson(/* code here */) {
-  /* code here */
+function makeSmartPerson(name) {
+  return {
+   name: name,
+   sum: function sum(num1, num2){
+    return num1 + num2;
+   },
+   speak: function speak() {
+     return `Hello, my name is ${name}`
+   }
+  }
 }
+makeSmartPerson("Julisa" );
 
 /**
  * ### Challenge `getCarInfoByIndex`
