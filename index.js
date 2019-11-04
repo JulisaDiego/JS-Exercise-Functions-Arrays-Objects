@@ -162,17 +162,20 @@ getCarInfoByIndex([47]);
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
 */
 function sortCarInventory(arr) {
-  arr.sort(a, b) {
-  if (a.car_model < b.car_model) {return -1}
-  if (a.car_model < b.car_model) {return 1}
+  arr.sort(a,b); {
+  if (a.car_model < b.car_model) {
+    return -1
+    }
 
-  return 0
+  if (a.car_model < b.car_model) {
+    return 1
+    }
+    return 0
   }
   return arr 
 };
 
 sortCarInventory();
-
 /**
  * ### Challenge `getModelYears`
  * 
@@ -251,9 +254,11 @@ getGermanCars();
  *   return num * 2
  * }
 */
-const sum = null; // code here!
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+const sum = (a,b) => a + b;  
+ 
+const addFive = (num) => num + 5;
+    
+const argTimesTwo = (num) => num * 2;
 
 /**
  * ### Challenge `carMaker`
